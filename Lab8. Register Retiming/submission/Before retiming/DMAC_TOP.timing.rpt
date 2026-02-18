@@ -1,0 +1,446 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 10
+        -max_paths 10
+Design : DMAC_TOP
+Version: Q-2019.12-SP5-5
+Date   : Mon Nov 17 23:49:01 2025
+****************************************
+
+Operating Conditions: ss0p75v125c   Library: saed32lvt_ss0p75v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: u_engine/u_fifo/rdptr_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: wdata_o[1] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DMAC_TOP           16000                 saed32lvt_ss0p75v125c
+  DMAC_ENGINE        16000                 saed32lvt_ss0p75v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_engine/u_fifo/rdptr_reg[1]/CLK (DFFX2_LVT)            0.00       0.00 r
+  u_engine/u_fifo/rdptr_reg[1]/QN (DFFX2_LVT)             0.14       0.14 f
+  u_engine/U382/Y (INVX0_LVT)                             0.11       0.25 r
+  u_engine/U623/Y (INVX0_LVT)                             0.09       0.34 f
+  u_engine/U664/Y (NBUFFX2_LVT)                           0.16       0.50 f
+  u_engine/U670/Y (AND4X1_LVT)                            0.18       0.68 f
+  u_engine/U680/Y (NBUFFX2_LVT)                           0.22       0.90 f
+  u_engine/U973/Y (NBUFFX2_LVT)                           0.19       1.09 f
+  u_engine/U843/Y (AO22X1_LVT)                            0.31       1.40 f
+  u_engine/U399/Y (NOR4X1_LVT)                            0.18       1.59 r
+  u_engine/U855/Y (NAND2X0_LVT)                           0.05       1.63 f
+  u_engine/wdata_o[1] (DMAC_ENGINE)                       0.00       1.63 f
+  wdata_o[1] (out)                                        0.00       1.63 f
+  data arrival time                                                  1.63
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -1.75       3.25
+  output external delay                                  -1.70       1.55
+  data required time                                                 1.55
+  --------------------------------------------------------------------------
+  data required time                                                 1.55
+  data arrival time                                                 -1.63
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.08
+
+
+  Startpoint: u_engine/u_fifo/rdptr_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: wdata_o[27]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DMAC_TOP           16000                 saed32lvt_ss0p75v125c
+  DMAC_ENGINE        16000                 saed32lvt_ss0p75v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_engine/u_fifo/rdptr_reg[3]/CLK (DFFX1_LVT)            0.00       0.00 r
+  u_engine/u_fifo/rdptr_reg[3]/QN (DFFX1_LVT)             0.17       0.17 r
+  u_engine/U622/Y (NBUFFX2_LVT)                           0.13       0.29 r
+  u_engine/U672/Y (AND4X1_LVT)                            0.32       0.61 r
+  u_engine/U673/Y (NBUFFX2_LVT)                           0.20       0.81 r
+  u_engine/U674/Y (INVX1_LVT)                             0.09       0.90 f
+  u_engine/U358/Y (INVX1_LVT)                             0.11       1.00 r
+  u_engine/U1027/Y (AO22X1_LVT)                           0.32       1.33 r
+  u_engine/U379/Y (AO21X1_LVT)                            0.08       1.40 r
+  u_engine/U378/Y (NOR2X0_LVT)                            0.11       1.51 f
+  u_engine/U357/Y (AND2X1_LVT)                            0.08       1.59 f
+  u_engine/U356/Y (NAND2X0_LVT)                           0.04       1.63 r
+  u_engine/wdata_o[27] (DMAC_ENGINE)                      0.00       1.63 r
+  wdata_o[27] (out)                                       0.00       1.63 r
+  data arrival time                                                  1.63
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -1.75       3.25
+  output external delay                                  -1.70       1.55
+  data required time                                                 1.55
+  --------------------------------------------------------------------------
+  data required time                                                 1.55
+  data arrival time                                                 -1.63
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.08
+
+
+  Startpoint: u_engine/u_fifo/rdptr_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: wdata_o[27]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DMAC_TOP           16000                 saed32lvt_ss0p75v125c
+  DMAC_ENGINE        16000                 saed32lvt_ss0p75v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_engine/u_fifo/rdptr_reg[3]/CLK (DFFX1_LVT)            0.00       0.00 r
+  u_engine/u_fifo/rdptr_reg[3]/QN (DFFX1_LVT)             0.17       0.17 r
+  u_engine/U622/Y (NBUFFX2_LVT)                           0.13       0.29 r
+  u_engine/U672/Y (AND4X1_LVT)                            0.32       0.61 r
+  u_engine/U673/Y (NBUFFX2_LVT)                           0.20       0.81 r
+  u_engine/U674/Y (INVX1_LVT)                             0.09       0.90 f
+  u_engine/U358/Y (INVX1_LVT)                             0.11       1.00 r
+  u_engine/U1027/Y (AO22X1_LVT)                           0.32       1.33 r
+  u_engine/U379/Y (AO21X1_LVT)                            0.08       1.40 r
+  u_engine/U378/Y (NOR2X0_LVT)                            0.11       1.51 f
+  u_engine/U357/Y (AND2X1_LVT)                            0.08       1.59 f
+  u_engine/U356/Y (NAND2X0_LVT)                           0.04       1.63 r
+  u_engine/wdata_o[27] (DMAC_ENGINE)                      0.00       1.63 r
+  wdata_o[27] (out)                                       0.00       1.63 r
+  data arrival time                                                  1.63
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -1.75       3.25
+  output external delay                                  -1.70       1.55
+  data required time                                                 1.55
+  --------------------------------------------------------------------------
+  data required time                                                 1.55
+  data arrival time                                                 -1.63
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.08
+
+
+  Startpoint: u_engine/u_fifo/rdptr_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: wdata_o[24]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DMAC_TOP           16000                 saed32lvt_ss0p75v125c
+  DMAC_ENGINE        16000                 saed32lvt_ss0p75v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_engine/u_fifo/rdptr_reg[0]/CLK (DFFX1_LVT)            0.00       0.00 r
+  u_engine/u_fifo/rdptr_reg[0]/QN (DFFX1_LVT)             0.17       0.17 r
+  u_engine/U659/Y (NBUFFX2_LVT)                           0.20       0.37 r
+  u_engine/U668/Y (AND4X1_LVT)                            0.21       0.58 r
+  u_engine/U836/Y (NBUFFX2_LVT)                           0.12       0.71 r
+  u_engine/U1020/Y (NBUFFX2_LVT)                          0.19       0.89 r
+  u_engine/U360/Y (NBUFFX2_LVT)                           0.19       1.08 r
+  u_engine/U451/Y (AOI22X1_LVT)                           0.35       1.43 f
+  u_engine/U839/Y (AND2X1_LVT)                            0.08       1.51 f
+  u_engine/U208/Y (AND2X1_LVT)                            0.08       1.59 f
+  u_engine/U840/Y (NAND2X0_LVT)                           0.04       1.63 r
+  u_engine/wdata_o[24] (DMAC_ENGINE)                      0.00       1.63 r
+  wdata_o[24] (out)                                       0.00       1.63 r
+  data arrival time                                                  1.63
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -1.75       3.25
+  output external delay                                  -1.70       1.55
+  data required time                                                 1.55
+  --------------------------------------------------------------------------
+  data required time                                                 1.55
+  data arrival time                                                 -1.63
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.08
+
+
+  Startpoint: u_engine/u_fifo/rdptr_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: wdata_o[24]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DMAC_TOP           16000                 saed32lvt_ss0p75v125c
+  DMAC_ENGINE        16000                 saed32lvt_ss0p75v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_engine/u_fifo/rdptr_reg[0]/CLK (DFFX1_LVT)            0.00       0.00 r
+  u_engine/u_fifo/rdptr_reg[0]/QN (DFFX1_LVT)             0.17       0.17 r
+  u_engine/U659/Y (NBUFFX2_LVT)                           0.20       0.37 r
+  u_engine/U668/Y (AND4X1_LVT)                            0.21       0.58 r
+  u_engine/U836/Y (NBUFFX2_LVT)                           0.12       0.71 r
+  u_engine/U1020/Y (NBUFFX2_LVT)                          0.19       0.89 r
+  u_engine/U360/Y (NBUFFX2_LVT)                           0.19       1.08 r
+  u_engine/U451/Y (AOI22X1_LVT)                           0.35       1.43 f
+  u_engine/U839/Y (AND2X1_LVT)                            0.08       1.51 f
+  u_engine/U208/Y (AND2X1_LVT)                            0.08       1.59 f
+  u_engine/U840/Y (NAND2X0_LVT)                           0.04       1.63 r
+  u_engine/wdata_o[24] (DMAC_ENGINE)                      0.00       1.63 r
+  wdata_o[24] (out)                                       0.00       1.63 r
+  data arrival time                                                  1.63
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -1.75       3.25
+  output external delay                                  -1.70       1.55
+  data required time                                                 1.55
+  --------------------------------------------------------------------------
+  data required time                                                 1.55
+  data arrival time                                                 -1.63
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.08
+
+
+  Startpoint: u_engine/u_fifo/rdptr_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: wdata_o[24]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DMAC_TOP           16000                 saed32lvt_ss0p75v125c
+  DMAC_ENGINE        16000                 saed32lvt_ss0p75v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_engine/u_fifo/rdptr_reg[1]/CLK (DFFX2_LVT)            0.00       0.00 r
+  u_engine/u_fifo/rdptr_reg[1]/QN (DFFX2_LVT)             0.17       0.17 r
+  u_engine/U382/Y (INVX0_LVT)                             0.09       0.25 f
+  u_engine/U617/Y (INVX0_LVT)                             0.10       0.35 r
+  u_engine/U668/Y (AND4X1_LVT)                            0.23       0.58 r
+  u_engine/U836/Y (NBUFFX2_LVT)                           0.12       0.70 r
+  u_engine/U1020/Y (NBUFFX2_LVT)                          0.19       0.89 r
+  u_engine/U360/Y (NBUFFX2_LVT)                           0.19       1.08 r
+  u_engine/U451/Y (AOI22X1_LVT)                           0.35       1.43 f
+  u_engine/U839/Y (AND2X1_LVT)                            0.08       1.50 f
+  u_engine/U208/Y (AND2X1_LVT)                            0.08       1.58 f
+  u_engine/U840/Y (NAND2X0_LVT)                           0.04       1.62 r
+  u_engine/wdata_o[24] (DMAC_ENGINE)                      0.00       1.62 r
+  wdata_o[24] (out)                                       0.00       1.62 r
+  data arrival time                                                  1.62
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -1.75       3.25
+  output external delay                                  -1.70       1.55
+  data required time                                                 1.55
+  --------------------------------------------------------------------------
+  data required time                                                 1.55
+  data arrival time                                                 -1.62
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.07
+
+
+  Startpoint: u_engine/u_fifo/rdptr_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: wdata_o[2] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DMAC_TOP           16000                 saed32lvt_ss0p75v125c
+  DMAC_ENGINE        16000                 saed32lvt_ss0p75v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_engine/u_fifo/rdptr_reg[0]/CLK (DFFX1_LVT)            0.00       0.00 r
+  u_engine/u_fifo/rdptr_reg[0]/Q (DFFX1_LVT)              0.20       0.20 r
+  u_engine/U621/Y (NBUFFX2_LVT)                           0.12       0.32 r
+  u_engine/U618/Y (AND4X1_LVT)                            0.32       0.64 r
+  u_engine/U619/Y (NBUFFX2_LVT)                           0.13       0.77 r
+  u_engine/U937/Y (NBUFFX2_LVT)                           0.12       0.89 r
+  u_engine/U227/Y (NBUFFX2_LVT)                           0.28       1.18 r
+  u_engine/U697/Y (AO22X1_LVT)                            0.22       1.39 r
+  u_engine/U455/Y (NOR2X0_LVT)                            0.11       1.50 f
+  u_engine/U207/Y (AND2X1_LVT)                            0.08       1.58 f
+  u_engine/U395/Y (NAND2X0_LVT)                           0.04       1.62 r
+  u_engine/wdata_o[2] (DMAC_ENGINE)                       0.00       1.62 r
+  wdata_o[2] (out)                                        0.00       1.62 r
+  data arrival time                                                  1.62
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -1.75       3.25
+  output external delay                                  -1.70       1.55
+  data required time                                                 1.55
+  --------------------------------------------------------------------------
+  data required time                                                 1.55
+  data arrival time                                                 -1.62
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.07
+
+
+  Startpoint: u_engine/u_fifo/rdptr_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: wdata_o[7] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DMAC_TOP           16000                 saed32lvt_ss0p75v125c
+  DMAC_ENGINE        16000                 saed32lvt_ss0p75v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_engine/u_fifo/rdptr_reg[1]/CLK (DFFX2_LVT)            0.00       0.00 r
+  u_engine/u_fifo/rdptr_reg[1]/QN (DFFX2_LVT)             0.14       0.14 f
+  u_engine/U382/Y (INVX0_LVT)                             0.11       0.25 r
+  u_engine/U623/Y (INVX0_LVT)                             0.09       0.34 f
+  u_engine/U664/Y (NBUFFX2_LVT)                           0.16       0.50 f
+  u_engine/U670/Y (AND4X1_LVT)                            0.18       0.68 f
+  u_engine/U771/Y (NBUFFX2_LVT)                           0.21       0.90 f
+  u_engine/U772/Y (INVX1_LVT)                             0.09       0.99 r
+  u_engine/U232/Y (INVX0_LVT)                             0.09       1.08 f
+  u_engine/U860/Y (AO22X1_LVT)                            0.21       1.29 f
+  u_engine/U864/Y (NOR4X1_LVT)                            0.20       1.49 r
+  u_engine/U446/Y (AND2X1_LVT)                            0.07       1.57 r
+  u_engine/U870/Y (NAND3X0_LVT)                           0.05       1.62 f
+  u_engine/wdata_o[7] (DMAC_ENGINE)                       0.00       1.62 f
+  wdata_o[7] (out)                                        0.00       1.62 f
+  data arrival time                                                  1.62
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -1.75       3.25
+  output external delay                                  -1.70       1.55
+  data required time                                                 1.55
+  --------------------------------------------------------------------------
+  data required time                                                 1.55
+  data arrival time                                                 -1.62
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.07
+
+
+  Startpoint: u_engine/u_fifo/rdptr_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: wdata_o[9] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DMAC_TOP           16000                 saed32lvt_ss0p75v125c
+  DMAC_ENGINE        16000                 saed32lvt_ss0p75v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_engine/u_fifo/rdptr_reg[1]/CLK (DFFX2_LVT)            0.00       0.00 r
+  u_engine/u_fifo/rdptr_reg[1]/QN (DFFX2_LVT)             0.14       0.14 f
+  u_engine/U382/Y (INVX0_LVT)                             0.11       0.25 r
+  u_engine/U617/Y (INVX0_LVT)                             0.09       0.34 f
+  u_engine/U668/Y (AND4X1_LVT)                            0.23       0.57 f
+  u_engine/U836/Y (NBUFFX2_LVT)                           0.13       0.70 f
+  u_engine/U1020/Y (NBUFFX2_LVT)                          0.18       0.88 f
+  u_engine/U360/Y (NBUFFX2_LVT)                           0.18       1.06 f
+  u_engine/U220/Y (AO22X1_LVT)                            0.29       1.36 f
+  u_engine/U413/Y (NOR4X1_LVT)                            0.21       1.57 r
+  u_engine/U416/Y (NAND2X0_LVT)                           0.05       1.62 f
+  u_engine/wdata_o[9] (DMAC_ENGINE)                       0.00       1.62 f
+  wdata_o[9] (out)                                        0.00       1.62 f
+  data arrival time                                                  1.62
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -1.75       3.25
+  output external delay                                  -1.70       1.55
+  data required time                                                 1.55
+  --------------------------------------------------------------------------
+  data required time                                                 1.55
+  data arrival time                                                 -1.62
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.07
+
+
+  Startpoint: u_engine/u_fifo/rdptr_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: wdata_o[14]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DMAC_TOP           16000                 saed32lvt_ss0p75v125c
+  DMAC_ENGINE        16000                 saed32lvt_ss0p75v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_engine/u_fifo/rdptr_reg[0]/CLK (DFFX1_LVT)            0.00       0.00 r
+  u_engine/u_fifo/rdptr_reg[0]/Q (DFFX1_LVT)              0.20       0.20 f
+  u_engine/U621/Y (NBUFFX2_LVT)                           0.12       0.31 f
+  u_engine/U618/Y (AND4X1_LVT)                            0.31       0.62 f
+  u_engine/U619/Y (NBUFFX2_LVT)                           0.14       0.76 f
+  u_engine/U937/Y (NBUFFX2_LVT)                           0.12       0.89 f
+  u_engine/U227/Y (NBUFFX2_LVT)                           0.27       1.16 f
+  u_engine/U1054/Y (AO22X1_LVT)                           0.21       1.37 f
+  u_engine/U368/Y (NOR4X1_LVT)                            0.20       1.57 r
+  u_engine/U1058/Y (NAND2X0_LVT)                          0.05       1.62 f
+  u_engine/wdata_o[14] (DMAC_ENGINE)                      0.00       1.62 f
+  wdata_o[14] (out)                                       0.00       1.62 f
+  data arrival time                                                  1.62
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -1.75       3.25
+  output external delay                                  -1.70       1.55
+  data required time                                                 1.55
+  --------------------------------------------------------------------------
+  data required time                                                 1.55
+  data arrival time                                                 -1.62
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.07
+
+
+1

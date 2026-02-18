@@ -1,0 +1,45 @@
+ 
+****************************************
+Report : area
+Design : DMAC_FIFO
+Version: Q-2019.12-SP5-5
+Date   : Tue Nov 18 01:43:28 2025
+****************************************
+
+Library(s) Used:
+
+    saed32lvt_ss0p75v125c (File: /home/ScalableArchiLab/SAED32_EDK/lib/stdcell_lvt/db_ccs/saed32lvt_ss0p75v125c.db)
+
+Number of ports:                           70
+Number of nets:                          2371
+Number of cells:                         2318
+Number of combinational cells:           1759
+Number of sequential cells:               556
+Number of macros/black boxes:               0
+Number of buf/inv:                        625
+Number of references:                      33
+
+Combinational area:               3975.828805
+Buf/Inv area:                     1219.891258
+Noncombinational area:            3676.193079
+Macro/Black Box area:                0.000000
+Net Interconnect area:            1434.875095
+
+Total cell area:                  7652.021885
+Total area:                       9086.896979
+
+The above information was reported from the logical library. The following are from the physical library:
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  ---------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-     Noncombi-  Black-
+                                  Total      Total    national   national   boxes   Design
+--------------------------------  ---------  -------  ---------  ---------  ------  ---------
+DMAC_FIFO                         7652.0219    100.0  3975.8288  3676.1931  0.0000  DMAC_FIFO
+--------------------------------  ---------  -------  ---------  ---------  ------  ---------
+Total                                                 3975.8288  3676.1931  0.0000
+
+1

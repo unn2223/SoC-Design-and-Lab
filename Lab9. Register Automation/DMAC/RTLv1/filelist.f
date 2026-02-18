@@ -1,0 +1,5 @@
+-sverilog $LAB_PATH/RDLv1/OUTPUT/DMAC_CFG_pkg.sv
+-sverilog $LAB_PATH/RDLv1/OUTPUT/DMAC_CFG.sv
+-sverilog $LAB_PATH/RTLv1/DMAC_TOP.sv
+-sverilog $LAB_PATH/RTLv1/DMAC_ENGINE.sv
+-sverilog $LAB_PATH/RTLv1/DMAC_FIFO.sv
