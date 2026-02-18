@@ -12,8 +12,8 @@ SoC설계및실습 과목의 Lab 과제들을 정리한 저장소입니다.
 - `Lab9. Register Automation`
 
 ## Lab 요약
-- Lab2: APB 기반 설정 레지스터 구성
-- Lab3: DMA Engine 기본 동작 구현
+- Lab2: APB 기반 설정 DMA top 구현
+- Lab3: DMA Engine 동작 구현
 - Lab4: FIFO를 포함한 DMA 구조 확장
 - Lab5: Coverage 기반 검증 실습
 - Lab7: 합성 및 리포트 분석
